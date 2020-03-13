@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderConfirmationActivity">
+
+    <TextView
+        android:id="@+id/ordertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please confirm your shipment details"
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ordertv"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="Name"
+        android:textSize="17dp" />
+
+
+    <EditText
+        android:id="@+id/order_nameet"
+        android:layout_width="370dp"
+        android:layout_below="@+id/nametv"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:hint="Name"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:id="@+id/addresstv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_nameet"
+        android:layout_marginTop="25dp"
+        android:text="Address"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp" />
+
+
+    <EditText
+        android:id="@+id/order_addresset"
+        android:layout_width="370dp"
+        android:layout_below="@+id/addresstv"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:hint="Address"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/phonenotv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_addresset"
+        android:layout_marginTop="25dp"
+        android:text="Phone"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp" />
+
+
+    <EditText
+        android:id="@+id/order_phoneet"
+        android:layout_width="370dp"
+        android:layout_below="@+id/phonenotv"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:hint="Phone no"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:id="@+id/totalamt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount :"
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/paybtn"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+    <Button
+        android:id="@+id/paybtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Proceed to pay"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+
+
+</RelativeLayout>
